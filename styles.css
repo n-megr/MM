@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    margin-bottom: -100px;
+    background: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.hamburger {
+    display:  none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    max-width: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #000000;
+    background: #ffffff;
+}
+
+.nav-bar ul li a.active {
+    color: #000000;
+    background: #ffffff;
+}
+
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 0 50px;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger .line {
+        width: 30px;
+        height: 3px;
+        background: #ffffff;
+        margin: 6px 0;
+    }
+    .nav-bar.active {
+        height: 450px;
+    }
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right:0;
+        width: 100vw;
+        background: #000000;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto; 
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+}
+
+
+
+.h1 {
+    padding-top: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    font-style:oblique;
+    text-align: center;
+  }
+
+.title {
+    color: rgb(0, 0, 0);
+    text-align:center;
+    margin-bottom: -10px;   
+}
+
+.title h4{
+    text-transform:capitalize;
+    font-size:36px;
+    position:relative;
+    display:inline-block;
+    margin-top: 0;
+}
+
+.title h4 span {
+    display:block;
+    font-size:18px;
+    font-style:italic;
+    font-weight: bold;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.title h4::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+
+
+.title h3{
+    text-transform:capitalize;
+    font-size:36px;
+    position:relative;
+    display:inline-block;
+    margin-top: 0;
+}
+
+.title h3 span {
+    display:block;
+    font-size:18px;
+    font-style:italic;
+    font-weight: bold;
+    position: relative;
+    margin-left: 15px;
+    margin-bottom: -10px;
+}
+
+.title h3::before {
+    position: absolute;
+    content: "";
+    width: 100px;
+    height: 2px;
+    background-color: #000000;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%)
+}
+
+.single-menu h3 span {
+    float: right;
+    color: #ffffff;
+    font-size: italic;
+    padding-bottom: 4px;
+    margin-left: -56px;
+}
+.menu {
+    width: 250px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+.wrapper {
+    width: 1200px;
+    margin: 100px auto;
+}
+
+.menu {
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+
+.single-menu {
+    color: rgb(255, 255, 255);
+    flex-basis: 380px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(255, 255, 255);
+}
+
+
+
+.single-menu{
+
+    flex-direction: row;
+} 
+
+.single-menu:hover img{
+    border-radius: 0;
+    
+}
+
+.single-menu img {
+    max-width: 180px;
+    margin-right: 30px;
+    margin-left: 20px;
+    border-radius: 150px ;
+    padding: 3px;
+    transition:.5s;
+}
+
+.single-menu h4 {
+    text-transform: capitalize;
+    font-size: 22px;
+    border-bottom: 1px dashed #000000;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+
+.single-menu h4 span {
+    float: right;
+    color: #ffffff;
+    font-size: italic;;
+}
+
+.background {
+    background: rgb(0, 0, 0);
+    padding-top: 20px;
+}
+
+.inglisuri {
+    margin-left: 20px;
+}
+
+.inglisuri-image {
+    display: flex;
+    width: 32px;
+    height: 50px;
+}
+
+.back {
+    width: auto;
+    display: flex;
+    height: auto;
+    margin-left: 20px;
+}
+
+.back-image {
+    display: flex;
+    width: 25px;
+    height: 50px;
+}
+
+.russian-image {
+    display:flex;
+    width:34px;
+    height: 50px;
+}
+
+.back-image-russian {
+        display: flex;
+        width: 5px;
+        height: 50px;
+        margin-right: 20px;
+}
+
+.back-georgian {
+    margin-right: 40px;
+}
+
+.bug {
+    margin-right: 40px;
+    display: flex;
+}
+
+.bug-form {
+    display:flex;
+    margin-right: 25px;
+}
+
+.mm {
+    color: rgb(0, 0, 0);
+}
+
+html, body {
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;  
+    background: url("background 1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.wrapper .button {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin: 0 5px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    border-radius: 50px;
+    box-sizing: border-box;
+    line-height: 50px;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    line-height: 10px;
+}
+
+.icon  a {
+    color:rgb(0, 0, 0);
+}
+
+.container-form {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;  
+    background: url("background4.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.container-russian {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;  
+    background: url("background.5.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM</title>
+    <link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+    <header>
+        <div class="inglisuri">
+            <a href="form.html">
+                <button>
+                <div class="inglisuri-image">
+                <img src="british.jpg" alt="">
+                </div>
+                </button>
+            </a>
+            <a href="russian.html">
+                <button>
+                <div class="russian-image">
+                <img src="russian.jpg" alt="">
+                </div>
+                </button>
+            </a>
+        </div>
+        <div class="logo">MM</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                     <a href="index.html" >მთავარი</a>
+                </li>
+                <li>
+                     <a href="yava.html">ყავა</a>
+                </li>
+                <li>
+                     <a href="comeuli.html" >ცომეული</a>
+                </li>
+                <li>
+                     <a href="sadili.html" class="active">სადილი</a>
+                </li>
+                <li>
+                     <a href="pica.html">პიცა</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="background">
+        
+    <div class="menu">
+        <div id="yava" class="yava">
+        <div class="h1"><center><h1>სადილი</h1></center></div>
+        <div class="single-menu">
+            <img src="qatmis bulioni.jpg" alt="">
+            <div class="menu-content">
+            <h4>ქათმის ბულიონი<span>10.00₾</span></h4>
+            </div>
+        </div> 
+        <div class="single-menu">
+            <img src="sokos supi.jpg" alt="">
+            <div class="menu-content">
+            <h4>სოკოს სუპი<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="bostneulis supi.jpg" alt="">
+            <div class="menu-content">
+            <h4>ბოსტნეულის სუპი<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="ostri kecze.jpg" alt="">
+            <div class="menu-content">
+            <h4>ოსტრი კეცზე<span>12.00₾</span></h4>
+            </div>
+        </div> 
+        <div class="single-menu">
+            <img src="shemwvari wiwila.webp" alt="">
+            <div class="menu-content">
+            <h4>შემწვარი წიწილა<span>20.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="pelmeni qotanshi.jpg" alt="">
+            <div class="menu-content">
+            <h4>პელმენი ქოთანში</h4>
+            <h3>ხორცით - 20ც<span>6.00₾</span></h3>
+            <h3>ყველით - 20ც<span>6.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="Lobio qotanshi.jpg" alt="">
+            <div class="menu-content">
+            <h4>ლობიო ქოთანში<span></span></h4>
+            <h3>2 მჭადი,წნილის ასორტი<span>12.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="badrijani nigvzit.jpg" alt="">
+            <div class="menu-content">
+            <h4>ბადრიჯანი ნიგვზით<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="mwadi yvelit.webp" alt="">
+            <div class="menu-content">
+            <h4>მჭადი ყველი<span></span></h4>
+            <h3>4 მჭადი, 200 მრ, იმერული ყველი<span>10.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="cezari.jpg" alt="">
+            <div class="menu-content">
+            <h4>ცეზარი<span>12.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="berdznuli salati.jpg" alt="">
+            <div class="menu-content">
+            <h4>ბერძნული სალათი<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="qatmis salati.webp" alt="">
+            <div class="menu-content">
+            <h4>ქათმის სალათი<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="mwvane salati.jpg" alt="">
+            <div class="menu-content">
+            <h4>მწვანე სალათი<span>5.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="olivie.jpg" alt="">
+            <div class="menu-content">
+            <h4>ოლივიე<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="meqsikuri.jpg" alt="">
+            <div class="menu-content">
+            <h4>მექსიკური<span>9.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="fri.jpg" alt="">
+            <div class="menu-content">
+            <h4>ფრი<span>6.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="sendvichi.jpg" alt="">
+            <div class="menu-content">
+            <h4>სენდვიჩი<span></span></h4>
+            <h3>ლორი, ყველი, პომიდორი, ფრი<span>10.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="hot dog.jpg" alt="">
+            <div class="menu-content">
+            <h4>ჰოთ დოგი<span>6.00₾</span></h4>
+            </div>
+        </div>
+    </div>
+    </div>       
+</body>
+</html>

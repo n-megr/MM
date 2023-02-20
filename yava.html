@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM</title>
+    <link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+    <header>
+        <div class="inglisuri">
+            <a href="form.html">
+                <button>
+                <div class="inglisuri-image">
+                <img src="british.jpg" alt="">
+                </div>
+                </button>
+            </a>
+            <a href="russian.html">
+                <button>
+                <div class="russian-image">
+                <img src="russian.jpg" alt="">
+                </div>
+                </button>
+            </a>
+        </div>
+        <div class="logo">MM</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                     <a href="index.html" >მთავარი</a>
+                </li>
+                <li>
+                     <a href="yava.html" class="active">ყავა</a>
+                </li>
+                <li>
+                     <a href="comeuli.html">ცომეული</a>
+                </li>
+                <li>
+                     <a href="sadili.html">სადილი</a>
+                </li>
+                <li>
+                     <a href="pica.html">პიცა</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="background">
+        
+    <div class="menu">
+        <div id="yava" class="yava">
+        <div class="h1"><center><h1>ყავა</h1></center></div>
+        <div class="single-menu">
+            <img src="espreso.jpg" alt="">
+            <div class="menu-content">
+            <h4>ესპრესო<span>4.00₾</span></h4>
+            <h3>ორმაგი ესპრესო<span>6.00₾</span></h3>
+            </div>
+        </div>  
+        
+        <div class="single-menu">
+            <img src="amerikano.jpg" alt="">
+            <div class="menu-content">
+            <h4>ამერიკანო<span>5.00₾</span></h4>
+            <h3>ორმაგი ამერიკანო<span>7.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="kapuchino.jpg" alt="">
+            <div class="menu-content">
+            <h4>კაპუჩინო<span>6.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="late.jpg" alt="">
+            <div class="menu-content">
+            <h4>ლატე<span>7.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="civi yava.jpg" alt="">
+            <div class="menu-content">
+            <h4>ცივი ყავა<span>5.00₾</span></h4>
+            </div>
+        </div> 
+        <div class="single-menu">
+            <img src="civi yava nayinit.jpg" alt="">
+            <div class="menu-content">
+            <h4>ცივი ყავა ნაყინით<span>8.00₾</span></h4>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="cxeli shokoladii.jpg" alt="">
+            <div class="menu-content">
+            <h4>ცხელი შოლოკადი<span>6.00₾</span></h4>
+            </div>
+        </div>
+        </div>
+    </div>
+    </div>       
+</body>
+</html>

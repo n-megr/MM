@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body> 
+    <header>
+        <div class="inglisuri">
+            <a href="index.html">
+                <button>
+                <div class="back-image">
+                <img src="saqartvelo.jpg" alt="">
+                </div>
+                </button>
+            </a>
+            <a href="russian.html">
+                <button>
+                <div class="russian-image">
+                <img src="russian.jpg" alt="">
+                </div>
+                </button>
+            </a>
+        </div>
+        <div class="logo">MM</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                     <a href="form.html" class="active">Home</a>
+                </li>
+                <li>
+                     <a href="yavaform.html" >Coffee</a>
+                </li>
+                <li>
+                     <a href="comeuliform.html">Baked</a>
+                </li>
+                <li>
+                     <a href="sadiliform.html">Dinner</a>
+                </li>
+                <li>
+                     <a href="pizzaform.html">Pizza</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="container-form">
+        <script src="https://kit.fontawesome.com/7f593fa804.js" crossorigin="anonymous"></script>
+            <div class="wrapper">
+                <div class="button">
+                    <div class="icon"><a href="https://www.facebook.com/profile.php?id=100084352881197"><i class="fa-brands fa-facebook"></i></a>
+                    </div>
+                </div>
+                <div class="button">
+                <div class="icon"><a href="https://www.google.com/maps/place/MM+OBIEQTI/@42.1121828,43.0411523,17.25z/data=!4m6!3m5!1s0x405cb9174af80dbd:0xbba92694ef5e0075!8m2!3d42.1118322!4d43.0397765!16s%2Fg%2F11t6vmsvb6"><i class="fa-solid fa-map-location-dot"></i></a>
+                </div>
+                </div>
+            </div>
+    </div>
+</body>
+</html>

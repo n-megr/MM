@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MM</title>
+    <link rel="stylesheet" href="styles.css" >
+
+</head>
+<body>
+    <header>
+        <div class="inglisuri">
+            <a href="form.html">
+                <button>
+                <div class="inglisuri-image">
+                <img src="british.jpg" alt="">
+                </div>
+                </button>
+            </a>
+            <a href="russian.html">
+                <button>
+                <div class="russian-image">
+                <img src="russian.jpg" alt="">
+                </div>
+                </button>
+            </a>
+        </div>
+        <div class="logo">MM</div>
+        <div class="hamburger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <ul>
+                <li>
+                     <a href="index.html" >მთავარი</a>
+                </li>
+                <li>
+                     <a href="yava.html" >ყავა</a>
+                </li>
+                <li>
+                     <a href="comeuli.html">ცომეული</a>
+                </li>
+                <li>
+                     <a href="sadili.html">სადილი</a>
+                <li>
+                     <a href="pica.html" class="active">პიცა</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <script>
+        hamburger = document.querySelector(".hamburger");
+        hamburger.onclick = function() {
+            navBar = document.querySelector(".nav-bar");
+            navBar.classList.toggle("active");
+        }
+    </script>
+    <div class="background">
+        
+    <div class="menu">
+        <div id="yava" class="yava">
+        <div class="h1"><center><h1>პიცა</h1></center></div>
+        <div class="single-menu">
+            <img src="pica.jpg" alt="">
+            <div class="menu-content">
+            <h4>პეპრონი<span></span></h4>
+            <h5>სულგუნი, პეპერონი</h5>
+            <h3>4 ნაჭერი<span>12.00₾</span></h3>
+            <h3>6 ნაჭერი<span>15.00₾</span></h3>
+            </div>
+        </div>  
+        
+        <div class="single-menu">
+            <img src="pica.jpg" alt="">
+            <div class="menu-content">
+            <h4>პეპერონი<span>5.00₾</span></h4>
+            <h5>სულგუნი, გაუდა, პეპერონი</h5>
+            <h3>4 ნაჭერი<span>15.00₾</span></h3>
+            <h3>6 ნაჭერი<span>18.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="otxi yveli.jpg" alt="">
+            <div class="menu-content">
+            <h4>ოთხი ყველი<span>6.00₾</span></h4>
+            <h5>სულგუნი, გაუდა, მოცარელა, ედამი</h5>
+            <h3>4 ნაჭერი<span>18.00₾</span></h3>
+            <h3>6 ნაჭერი<span>22.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="qatmis.jpg" alt="">
+            <div class="menu-content">
+            <h4>ქათმის<span>7.00₾</span></h4>
+            <h5>სულგუნი, ქათმის ხორცი</h5>
+            <h3>4 ნაჭერი<span>14.00₾</span></h3>
+            <h3>6 ნაჭერი<span>18.00₾</span></h3>
+            </div>
+        </div>
+        <div class="single-menu">
+            <img src="gurmani.jpg" alt="">
+            <div class="menu-content">
+            <h4>გურმანი<span>5.00₾</span></h4>
+            <h5>სულგუნი, საქონლის ძეხვი, ჰალაპენიო</h5>
+            <h3>4 ნაჭერი<span>14.00₾</span></h3>
+            <h3>6 ნაჭერი<span>18.00₾</span></h3>
+            </div>
+        </div> 
+        </div>
+    </div>
+    </div>       
+</body>
+</html>
